@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <tile>Method</tile>
+  <head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body {
+      font-family: sans-serif;
+    }
+    
+    .navbar {
+      overflow: hidden;
+      background-color: rgb(73, 73, 73);
+    }
+    
+    .navbar a {
+      float: left;
+      font-size: 24px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+    
+    .dropdown .dropbtn {
+      font-size: 24px;  
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+    
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: rgb(92, 105, 135);
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      float: none;
+      color: rgb(92, 105, 135);
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <div class="navbar">
+        
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="monitor.html">Live Monitor</a>
+      <div class="dropdown">
+        <button class="dropbtn">More 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="why.html">Why</a>
+          <a href="materials.html">Materials</a>
+          <a href="methods.html">Methods</a>
+          
+        </div>
+      </div> 
+    </div>
+
+    </body>
+  
+<!--background-->
+
+<body background="https://th.bing.com/th/id/R.8e9718832e7b6574c7bfcf313d438582?rik=siy4YdxnIYW7jw&riu=http%3a%2f%2fwww.photos-public-domain.com%2fwp-content%2fuploads%2f2012%2f01%2fcrumpled-black-paper-texture.jpg&ehk=z2hXei%2fg9Qbzq2OIt3hTjy3TOs09EuaaTuuh6s0CI1c%3d&risl=&pid=ImgRaw&r=0">
+  
+    <style>
+        body {              
+        text-align: center; 
+                    color:rgb(255, 255, 255);
+                    font-family: sans-serif;
+                    background-size: cover;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-attachment: fixed;
+             }
+                
+            p {
+              font-size: 42px;
+              }    
+      </style>
+       <div class="w3-container w3-teal">
+        <h1>Method</h1>
+      </div>
+   
+     
+      <h2>-Our project is an automatic humidity-controlled humidifier that uses a DHT11 temperature and humidity sensor soldered to an ElectroCookie PCB, connected to an Arduino Uno R3-  </h2>
+        <h4>The components are bundled into a 3D printed enclosure which houses the Arduino, the PCB, the DHT11 sensor, and a standard 120v power outlet with an accompanying 5v Arduino controlled relay. </h4>
+         <h4> When the DHT11 senses the humidity has become too low, the Arduino will send a signal to the relay to turn on the outlet, turning on the humidifier at the same time. </h4>
+         <h4>When the humidity has reached standard levels, the Arduino turns off the outlet.</h4>
+
+
+         <h1>Programs/frameworks used</h1>
+         <h4>-Arduino IDE</h4>
+         <div class="w3-container ">
+          <img src="Images\ard_p1.png" alt="arduino" style="width:512px;height:768px;  border: 10px solid white;">
+          <img src="Images\ard_p2.png" alt="arduino" style="width:512px;height:768px;  border: 10px solid white;">
+          <img src="Images\ard_p3.png" alt="arduino" style="width:512px;height:300px;  border: 10px solid white;">
+        </div>
+
+         <h4>-Visual Studio Code</h4>
+         <h8>HTML for website</h8>
+
+
+         <h4>-Node.js</h4>
+         <img src="Images\nodepk.png" alt="arduino" style="width:512px;height:768px; ">
+
+       
+        <div class="w3-container w3-teal">
+          <h4>Other similar projects/refernces</h4>
+          <a href="https://itp.nyu.edu/physcomp/labs/labs-serial-communication/lab-serial-communication-with-node-js/">Lab: Serial Communication with Node.js</a>
+          <br>
+          <a href="https://create.arduino.cc/projecthub/infoelectorials/project-005-arduino-dht-humidity-sensor-project-2adc15">Project 005: Arduino "DHT" Humidity Sensor Project </a>
+        </div>
+
+  </html>

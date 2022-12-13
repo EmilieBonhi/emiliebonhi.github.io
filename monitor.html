@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <tile>Monitor</tile>
+  <head>
+    <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+     
+    }
+    
+    .navbar {
+      overflow: hidden;
+      background-color: rgb(73, 73, 73);
+    }
+    
+    .navbar a {
+      float: left;
+      font-size: 24px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+    
+    .dropdown .dropbtn {
+      font-size: 24px;  
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+    
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: rgb(92, 105, 135);
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      float: none;
+      color: rgb(92, 105, 135);
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <div class="navbar">
+        
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="monitor.html">Live Monitor</a>
+      <div class="dropdown">
+        <button class="dropbtn">More 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="why.html">Why</a>
+          <a href="materials.html">Materials</a>
+          <a href="methods.html">Methods</a>
+          
+        </div>
+      </div> 
+    </div>
+
+    </body>
+ 
+    <body>
+      
+    
+    <p> Welcome to the Live Monitor</p>
+    <div id="sample"></div>
+    
+    <script>
+      
+      var socket = io();
+      
+      socket.on ('data',function(data){
+
+console.log(data);
+
+document.getElementById('sample').innerHTML=data;
+
+      });
+    </script>
+
+    </body>
+    
+  
+<!--background-->
+
+<body background="https://th.bing.com/th/id/R.8e9718832e7b6574c7bfcf313d438582?rik=siy4YdxnIYW7jw&riu=http%3a%2f%2fwww.photos-public-domain.com%2fwp-content%2fuploads%2f2012%2f01%2fcrumpled-black-paper-texture.jpg&ehk=z2hXei%2fg9Qbzq2OIt3hTjy3TOs09EuaaTuuh6s0CI1c%3d&risl=&pid=ImgRaw&r=0">
+  
+    <style>
+      
+        body {              
+        text-align: center; 
+                    color:rgb(255, 255, 255);
+                    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                    background-size: cover;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-attachment: fixed;
+             }
+                
+            p {
+              font-size: 42px;
+              }    
+      </style>
+      
+      
+
+  </html>
+
+  
