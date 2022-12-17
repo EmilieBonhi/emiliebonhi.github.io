@@ -1,0 +1,16 @@
+{
+    "name": "basic-socket",
+    "version": "0.0.1",
+    "description": "Communication between arduino and html",
+    "dependencies":{
+        "serialport": "^9.0.1",
+        "socket.io": "^2.0.4"
+    },
+       "scripts": { 
+     "lite": "lite-server --port 10001", 
+     "start": "npm run lite" 
+   }
+
+
+
+}
